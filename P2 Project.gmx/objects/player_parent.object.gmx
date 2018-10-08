@@ -79,7 +79,7 @@ vspeed = (input_check(global.keyDown, player)-input_check(global.keyUp, player))
           <argument>
             <kind>1</kind>
             <string>draw_self()
-draw_set_font(font0)
+draw_set_font(Arial)
 draw_set_color(c_white)
 var p = player;
 if os_type != os_android

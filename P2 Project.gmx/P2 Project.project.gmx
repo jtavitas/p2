@@ -31,10 +31,12 @@
     <sprite>sprites\answerbox</sprite>
     <sprite>sprites\questionbox</sprite>
     <sprite>sprites\box</sprite>
+    <sprite>sprites\minimap</sprite>
+    <sprite>sprites\track</sprite>
+    <sprite>sprites\mini_blue</sprite>
+    <sprite>sprites\mini_red</sprite>
   </sprites>
-  <backgrounds name="background">
-    <background>background\reference</background>
-  </backgrounds>
+  <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_qlist_easy_p1.gml</script>
@@ -112,6 +114,15 @@
     </objects>
     <objects name="Edge Display Scaler">
       <object>objects\obj_scaler</object>
+    </objects>
+    <objects name="Mini-map">
+      <object>objects\obj_mini_display</object>
+    </objects>
+    <objects name="Track">
+      <object>objects\obj_track</object>
+      <object>objects\obj_blue_mini</object>
+      <object>objects\obj_red_mini</object>
+      <object>objects\obj_flag</object>
     </objects>
   </objects>
   <rooms name="rooms">
