@@ -25,12 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_qlist_easy();
-
-global.cur_q = ds_list_find_value(global.questions, 0);
-ds_list_delete(global.questions, 0);
-
-q = global.cur_q[0];
+            <string>a = global.cur_q[2];
 </string>
           </argument>
         </arguments>
@@ -53,12 +48,12 @@ q = global.cur_q[0];
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_teal, image_alpha);
 
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-draw_text_colour(x, y, q, c_black, c_black, c_black, c_black, 1.0);
+draw_text_colour(x, y, a, c_black, c_black, c_black, c_black, 1.0);
 </string>
           </argument>
         </arguments>

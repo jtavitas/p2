@@ -5,15 +5,22 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\box</sprite>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_qlist_easy.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_ans1_p1</object>
-    <object>objects\obj_ques_p1</object>
+    <objects name="Player 1 Q/A set">
+      <object>objects\obj_ques_p1</object>
+      <object>objects\obj_ans1_p1</object>
+      <object>objects\obj_ans2_p1</object>
+      <object>objects\ob_ans3_p1</object>
+      <object>objects\obj_ans4_p1</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>

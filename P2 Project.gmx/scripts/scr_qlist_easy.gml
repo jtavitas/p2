@@ -1,11 +1,20 @@
-global.ans = ds_list_create();
-global.a = 0;
+global.questions = ds_list_create();
+var a;
+a[0] = "Question 1";
+a[1] = "Answer 1";
+a[2] = "Answer 2";
+a[3] = "Answer 3";
+a[4] = "Answer 4";
+a[5] = 4 /* correct answer */;
+ds_list_add(global.questions, a);
+a = 0;
+a[0] = "Question 2";
+a[1] = "Answer 1";
+a[2] = "Answer 2";
+a[3] = "Answer 3";
+a[4] = "Answer 4";
+a[5] = 2 /* correct answer */;
+ds_list_add(global.questions, a);
+a = 0;
 
-a[0] = "Answer 1 to question 1";
-a[1] = "Answer 2 to question 1";
-a[2] = "Answer 3 to question 1";
-a[3] = "Answer 4 to question 1";
-ds_list_add(global.ans, a);
-
-global.a = round(random_range(0, 3));
-
+ds_list_shuffle(global.questions);
