@@ -5,3 +5,5 @@ obj_ans4_p1.can_select = false;
 
 if (correct) obj_blue_mini.hspeed += 0.2;
 else if (!correct) obj_blue_mini.hspeed -= 0.2;
+
+obj_blue_mini.alarm[0] = 0;
