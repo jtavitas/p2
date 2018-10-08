@@ -3,27 +3,121 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <datafiles number="1" name="datafiles">
+    <datafile>
+      <name>CoveredByYourGrace.ttf</name>
+      <exists>-1</exists>
+      <size>57040</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>105553694031980</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>CoveredByYourGrace.ttf</filename>
+    </datafile>
+  </datafiles>
+  <NewExtensions>
+    <extension index="0">extensions\Easy Control Input</extension>
+    <extension index="1">extensions\Display Scaler - Edge Engine</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\answerbox</sprite>
+    <sprite>sprites\questionbox</sprite>
     <sprite>sprites\box</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\reference</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_qlist_easy.gml</script>
+    <script>scripts\scr_qlist_easy_p1.gml</script>
+    <script>scripts\scr_qlist_easy_p2.gml</script>
+    <scripts name="Gamepad Scripts">
+      <script>scripts\input_initialize.gml</script>
+      <script>scripts\update_input.gml</script>
+      <script>scripts\input_check.gml</script>
+      <script>scripts\input_check_pressed.gml</script>
+      <script>scripts\input_check_released.gml</script>
+      <script>scripts\input_press.gml</script>
+      <script>scripts\input_release.gml</script>
+      <script>scripts\input_hold.gml</script>
+      <script>scripts\input_anykey.gml</script>
+      <script>scripts\input_lastkey.gml</script>
+      <script>scripts\key_value.gml</script>
+      <script>scripts\gamepad_lastbutton.gml</script>
+      <script>scripts\update_scheme.gml</script>
+    </scripts>
+    <script>scripts\scr_ans_select.gml</script>
+    <script>scripts\scr_ans_reset_p1.gml</script>
+    <script>scripts\scr_ans_reset_p2.gml</script>
+    <script>scripts\scr_select_off_p1.gml</script>
+    <script>scripts\scr_select_off_p2.gml</script>
+    <scripts name="Edge Display Scaler">
+      <scripts name="Display Scaling">
+        <script>scripts\edgeds_init_scale.gml</script>
+        <script>scripts\edgeds_set_scale.gml</script>
+        <script>scripts\edgeds_set_width.gml</script>
+        <script>scripts\edgeds_set_height.gml</script>
+        <script>scripts\edgeds_set_screenres.gml</script>
+      </scripts>
+      <scripts name="Asset Scaling">
+        <script>scripts\edgeds_draw_background.gml</script>
+        <script>scripts\edgeds_draw_sprite.gml</script>
+        <script>scripts\edgeds_draw_view.gml</script>
+      </scripts>
+      <scripts name="Functions">
+        <script>scripts\move_link.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\Arial</font>
+  </fonts>
   <objects name="objects">
+    <objects name="System Controllers">
+      <object>objects\font_ctrl</object>
+      <object>objects\question_ctrl_p1</object>
+      <object>objects\question_ctrl_p2</object>
+      <object>objects\p1_wins</object>
+      <object>objects\p2_wins</object>
+    </objects>
     <objects name="Player 1 Q/A set">
       <object>objects\obj_ques_p1</object>
       <object>objects\obj_ans1_p1</object>
       <object>objects\obj_ans2_p1</object>
-      <object>objects\ob_ans3_p1</object>
+      <object>objects\obj_ans3_p1</object>
       <object>objects\obj_ans4_p1</object>
+    </objects>
+    <objects name="Player 2 Q/A set">
+      <object>objects\obj_ques_p2</object>
+      <object>objects\obj_ans1_p2</object>
+      <object>objects\obj_ans2_p2</object>
+      <object>objects\obj_ans3_p2</object>
+      <object>objects\obj_ans4_p2</object>
+    </objects>
+    <objects name="Controller Input">
+      <object>objects\objGameControl</object>
+      <object>objects\player_parent</object>
+      <object>objects\player1</object>
+      <object>objects\player2</object>
+      <object>objects\player3</object>
+      <object>objects\player4</object>
+    </objects>
+    <objects name="Edge Display Scaler">
+      <object>objects\obj_scaler</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
+    <room>rooms\rm_win_p1</room>
+    <room>rooms\rm_win_p2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
