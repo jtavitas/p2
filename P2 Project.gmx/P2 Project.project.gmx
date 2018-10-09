@@ -124,11 +124,15 @@
       <object>objects\obj_red_mini</object>
       <object>objects\obj_flag</object>
     </objects>
+    <objects name="Difficulty Selection">
+      <object>objects\diff_ctrl</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
     <room>rooms\rm_win_p1</room>
     <room>rooms\rm_win_p2</room>
+    <room>rooms\rm_start</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
