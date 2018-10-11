@@ -25,7 +25,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_qlist_easy_p2();
+            <string>var a = diff_store.p2_diff;
+switch(a)
+{
+    case 1:
+    scr_qlist_easy_p2();
+    break;
+    
+    case 2:
+    scr_qlist_easy_p2();
+    break;
+    
+    case 3:
+    scr_qlist_easy_p2();
+    break;
+}
 
 ds_list_shuffle(global.questions_p2);
 global.cur_q_p2 = ds_list_find_value(global.questions_p2, 0);
@@ -64,6 +78,7 @@ get_next = false;
 }
 else if (get_next &amp;&amp; ds_list_empty(global.questions_p2))
 {
+    audio_sound_gain(global.bgm, 0.0, 5000);
     room_goto(rm_win_p2);
 }
 </string>

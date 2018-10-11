@@ -10,7 +10,29 @@
   <persistent>0</persistent>
   <colour>0</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>var snd1 = audio_play_sound(win_cheer, 10, false);
+audio_sound_gain(snd1, 1.0, 0);
+audio_sound_gain(snd1, 0.0, 8500);
+
+var a = choose(1, 2, 3);
+
+switch(a)
+{
+    case 1:
+    var snd2 = audio_play_sound(win_congrats, 5, false);
+    audio_sound_gain(snd2, 0.5, 0);
+    break;
+    
+    case 2:
+    var snd2 = audio_play_sound(win_winner, 5, false);
+    audio_sound_gain(snd2, 0.5, 0);
+    break;
+    
+    case 3:
+    var snd2 = audio_play_sound(win_youwin, 5, false);
+    audio_sound_gain(snd2, 0.5, 0);
+    break;
+}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

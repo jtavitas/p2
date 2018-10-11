@@ -29,6 +29,7 @@
 timer = 20;
 alarm[0] = room_speed * timer;
 correct = false;
+global.p1_can_brake = true;
 </string>
           </argument>
         </arguments>

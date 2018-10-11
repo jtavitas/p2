@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,9 +25,108 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.confirmed = 0;
+            <string>confirmed = 0;
 global.p1_diff = 1;
 global.p2_diff = 1;
+num_lvls = 3;
+scroll_p1 = true;
+scroll_p2 = true;
+sel_p1 = true;
+sel_p2 = true;
+global.selected_p1 = false;
+global.selected_p2 = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>sel_p2 = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>sel_p1 = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>scroll_p2 = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>scroll_p1 = true;
 </string>
           </argument>
         </arguments>
@@ -50,10 +149,86 @@ global.p2_diff = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (global.confirmed == 2)
+            <string>if (confirmed == 2)
 {
-    global.confirmed = 0;
-    room_goto(rm_main);
+    diff_store.p1_diff = global.p1_diff;
+    diff_store.p2_diff = global.p2_diff;
+    room_goto_next();
+}
+
+if (scroll_p1)
+{
+    if (input_check_released(global.keyDown_gp, 0) || keyboard_check_released(ord("S")))
+    {
+        if (global.p1_diff &lt;&lt; num_lvls)
+        {
+            var snd1 = audio_play_sound(menu_select,5,0);
+            audio_sound_gain(snd1, 0.5, 0);
+            global.p1_diff++;
+            if (global.p1_diff &gt;= num_lvls) global.p1_diff = num_lvls;
+            scroll_p1 = false;
+            alarm[0] = 5;
+        }
+    }
+    if (input_check_released(global.keyUp_gp, 0) || keyboard_check_released(ord("W")))
+    {
+        if (global.p1_diff &gt;&gt; 1)
+        {
+            var snd1 = audio_play_sound(menu_select,5,0);
+            audio_sound_gain(snd1, 0.5, 0);
+            global.p1_diff--;
+            scroll_p1 = false;
+            alarm[0] = 5;
+        }
+    }
+}
+
+if (scroll_p2)
+{
+    if (input_check_released(global.keyDown_gp, 1) || keyboard_check_released(vk_down))
+    {
+        if (global.p2_diff &lt;&lt; num_lvls)
+        {
+            var snd1 = audio_play_sound(menu_select,5,0);
+            audio_sound_gain(snd1, 0.5, 0);
+            global.p2_diff++;
+            if (global.p2_diff &gt;= num_lvls) global.p2_diff = num_lvls;
+            scroll_p2 = false;
+            alarm[1] = 5;
+        }
+    }
+    if (input_check_released(global.keyUp_gp, 1) || keyboard_check_released(vk_up))
+    {
+        if (global.p2_diff &gt;&gt; 1)
+        {
+            var snd1 = audio_play_sound(menu_select,5,0);
+            audio_sound_gain(snd1, 0.5, 0);
+            global.p2_diff--;
+            scroll_p2 = false;
+            alarm[1] = 5;
+        }
+    }
+}
+
+if (input_check_released(global.gp_A, 0) || keyboard_check_released(vk_lcontrol))
+{
+    if (sel_p1)
+    {
+        if (!global.selected_p1){global.selected_p1 = true; scroll_p1 = false; confirmed++; var snd2 = audio_play_sound(menu_selected,5,0); audio_sound_gain(snd2, 0.5, 0);}
+        else {global.selected_p1 = false; scroll_p1 = true; confirmed--; var snd3 = audio_play_sound(menu_deselect,5,0); audio_sound_gain(snd3, 0.5, 0);}
+    
+        sel_p1 = false; alarm[2] = 5;
+    }
+}
+if (input_check_released(global.gp_A, 1) || keyboard_check_released(vk_rcontrol))
+{   
+    if(sel_p2)
+    {
+        if (!global.selected_p2){global.selected_p2 = true; scroll_p2 = false; confirmed++; var snd2 = audio_play_sound(menu_selected,5,0); audio_sound_gain(snd2, 0.5, 0);}
+        else {global.selected_p2 = false; scroll_p2 = true; confirmed--; var snd3 = audio_play_sound(menu_deselect,5,0); audio_sound_gain(snd3, 0.5, 0);}
+    
+        sel_p2 = false; alarm[3] = 5;
+    }
 }
 </string>
           </argument>

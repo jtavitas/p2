@@ -26,7 +26,21 @@
     <extension index="0">extensions\Easy Control Input</extension>
     <extension index="1">extensions\Display Scaler - Edge Engine</extension>
   </NewExtensions>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\menu_select</sound>
+    <sound>sound\menu_selected</sound>
+    <sound>sound\menu_deselect</sound>
+    <sound>sound\count_beep</sound>
+    <sound>sound\count_horn</sound>
+    <sound>sound\bgm_race</sound>
+    <sound>sound\car_revving</sound>
+    <sound>sound\car_rev</sound>
+    <sound>sound\car_brake</sound>
+    <sound>sound\win_cheer</sound>
+    <sound>sound\win_congrats</sound>
+    <sound>sound\win_winner</sound>
+    <sound>sound\win_youwin</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\answerbox</sprite>
     <sprite>sprites\questionbox</sprite>
@@ -35,12 +49,20 @@
     <sprite>sprites\track</sprite>
     <sprite>sprites\mini_blue</sprite>
     <sprite>sprites\mini_red</sprite>
+    <sprite>sprites\start_light</sprite>
+    <sprite>sprites\car_blue_placeholder</sprite>
+    <sprite>sprites\car_red_placeholder</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_qlist_easy_p1.gml</script>
     <script>scripts\scr_qlist_easy_p2.gml</script>
+    <script>scripts\scr_ans_select.gml</script>
+    <script>scripts\scr_ans_reset_p1.gml</script>
+    <script>scripts\scr_ans_reset_p2.gml</script>
+    <script>scripts\scr_select_off_p1.gml</script>
+    <script>scripts\scr_select_off_p2.gml</script>
     <scripts name="Gamepad Scripts">
       <script>scripts\input_initialize.gml</script>
       <script>scripts\update_input.gml</script>
@@ -56,11 +78,6 @@
       <script>scripts\gamepad_lastbutton.gml</script>
       <script>scripts\update_scheme.gml</script>
     </scripts>
-    <script>scripts\scr_ans_select.gml</script>
-    <script>scripts\scr_ans_reset_p1.gml</script>
-    <script>scripts\scr_ans_reset_p2.gml</script>
-    <script>scripts\scr_select_off_p1.gml</script>
-    <script>scripts\scr_select_off_p2.gml</script>
     <scripts name="Edge Display Scaler">
       <scripts name="Display Scaling">
         <script>scripts\edgeds_init_scale.gml</script>
@@ -120,19 +137,32 @@
     </objects>
     <objects name="Track">
       <object>objects\obj_track</object>
+      <object>objects\obj_red_mini_blank</object>
+      <object>objects\obj_blue_mini_blank</object>
       <object>objects\obj_blue_mini</object>
       <object>objects\obj_red_mini</object>
       <object>objects\obj_flag</object>
+      <object>objects\obj_blank_ans</object>
+      <object>objects\blue_car</object>
+      <object>objects\red_car</object>
     </objects>
     <objects name="Difficulty Selection">
       <object>objects\diff_ctrl</object>
+      <object>objects\diff_opt_p1</object>
+      <object>objects\diff_opt_p2</object>
+      <object>objects\diff_store</object>
+    </objects>
+    <objects name="Countdown">
+      <object>objects\count_ctrl</object>
+      <object>objects\count_signal</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_start</room>
+    <room>rooms\rm_cntdwn</room>
     <room>rooms\rm_main</room>
     <room>rooms\rm_win_p1</room>
     <room>rooms\rm_win_p2</room>
-    <room>rooms\rm_start</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
