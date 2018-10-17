@@ -55,6 +55,7 @@ audio_sound_gain(global.bgm, 2.0, 0);
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
+    <instance objName="speed_ctrl" x="160" y="32" name="inst_CA38359F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="question_ctrl_p1" x="96" y="32" name="inst_9EC4DA62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="font_ctrl" x="64" y="32" name="inst_1AA64CB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGameControl" x="32" y="32" name="inst_9C85DE58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

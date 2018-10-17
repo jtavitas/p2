@@ -106,6 +106,7 @@
       <object>objects\question_ctrl_p2</object>
       <object>objects\p1_wins</object>
       <object>objects\p2_wins</object>
+      <object>objects\speed_ctrl</object>
     </objects>
     <objects name="Player 1 Q/A set">
       <object>objects\obj_ques_p1</object>

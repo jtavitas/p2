@@ -7,7 +7,7 @@ if (correct)
 {
     var snd = audio_play_sound(car_rev,5,0);
     audio_sound_gain(snd, 0.5, 0);
-    obj_red_mini.hspeed += 0.2;
+    obj_red_mini.hspeed += global.base_spd;
 }
 else if (!correct)
 {
@@ -17,7 +17,7 @@ else if (!correct)
         var snd = audio_play_sound(car_brake,5,0);
         audio_sound_gain(snd, 0.4, 0);
     }
-    obj_red_mini.hspeed -= 0.2;
+    obj_red_mini.hspeed -= global.base_spd;
 }
 
 obj_red_mini.alarm[0] = 0;

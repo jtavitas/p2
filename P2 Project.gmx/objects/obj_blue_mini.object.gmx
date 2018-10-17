@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed = 0.2;
+            <string>hspeed = 0.4;
+global.base_spd = hspeed;
 timer = 20;
 alarm[0] = room_speed * timer;
 correct = false;
@@ -75,7 +76,7 @@ global.p1_can_brake = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (hspeed &lt; 0.2) hspeed = 0.2;
+            <string>if (hspeed &lt; global.base_spd) hspeed = global.base_spd;
 </string>
           </argument>
         </arguments>
