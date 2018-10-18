@@ -56,6 +56,7 @@
     <sprite>sprites\car_red_brake</sprite>
     <sprite>sprites\board</sprite>
     <sprite>sprites\lines_anim</sprite>
+    <sprite>sprites\logo_lic</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\p1_win_scrn</background>
@@ -168,6 +169,7 @@
       <object>objects\diff_opt_p1</object>
       <object>objects\diff_opt_p2</object>
       <object>objects\diff_store</object>
+      <object>objects\logo</object>
     </objects>
     <objects name="Countdown">
       <object>objects\count_ctrl</object>
