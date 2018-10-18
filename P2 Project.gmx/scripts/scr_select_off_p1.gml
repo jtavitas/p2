@@ -7,7 +7,8 @@ if (correct)
 {
     var snd = audio_play_sound(car_rev,5,0);
     audio_sound_gain(snd, 0.5, 0);
-    obj_blue_mini.hspeed += global.base_spd;
+    //obj_blue_mini.hspeed += global.base_spd;
+    obj_blue_mini.boost = true;
 }
 else if (!correct)
 {
@@ -17,8 +18,9 @@ else if (!correct)
         var snd = audio_play_sound(car_brake,5,0);
         audio_sound_gain(snd, 0.4, 0);
         blue_car.brake = true;
+        obj_blue_mini.alarm[1] = 1;
     }
-    obj_blue_mini.hspeed -= global.base_spd/10;
+    //obj_blue_mini.hspeed -= global.base_spd/10;
 }
 
-obj_blue_mini.alarm[0] = 0;
+obj_blue_mini.alarm[0] = room_speed * 3;
