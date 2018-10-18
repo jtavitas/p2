@@ -62,6 +62,12 @@
   <scripts name="scripts">
     <script>scripts\scr_qlist_easy_p1.gml</script>
     <script>scripts\scr_qlist_easy_p2.gml</script>
+    <script>scripts\scr_qlist_p1_sub.gml</script>
+    <script>scripts\scr_qlist_p2_sub.gml</script>
+    <script>scripts\scr_qlist_p1_add.gml</script>
+    <script>scripts\scr_qlist_p2_add.gml</script>
+    <script>scripts\scr_qlist_p1_mult.gml</script>
+    <script>scripts\scr_qlist_p2_mult.gml</script>
     <script>scripts\scr_ans_select.gml</script>
     <script>scripts\scr_ans_reset_p1.gml</script>
     <script>scripts\scr_ans_reset_p2.gml</script>
@@ -147,6 +153,7 @@
       <object>objects\obj_blue_mini</object>
       <object>objects\obj_red_mini</object>
       <object>objects\obj_flag</object>
+      <object>objects\obj_checker_flag</object>
       <object>objects\obj_blank_ans</object>
       <object>objects\blue_car</object>
       <object>objects\red_car</object>

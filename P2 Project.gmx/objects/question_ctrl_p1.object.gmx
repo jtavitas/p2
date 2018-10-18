@@ -29,15 +29,15 @@
 switch(a)
 {
     case 1:
-    scr_qlist_easy_p1();
+    scr_qlist_p1_add();
     break;
     
     case 2:
-    scr_qlist_easy_p1();
+    scr_qlist_p1_sub();
     break;
     
     case 3:
-    scr_qlist_easy_p1();
+    scr_qlist_p1_mult();
     break;
 }
 
@@ -75,11 +75,6 @@ get_next = false;
     ds_list_delete(global.questions_p1, 0);
 
     get_next = false;
-}
-else if (get_next &amp;&amp; ds_list_empty(global.questions_p1))
-{
-    audio_sound_gain(global.bgm, 0.0, 5000);
-    room_goto(rm_win_p1);
 }
 </string>
           </argument>

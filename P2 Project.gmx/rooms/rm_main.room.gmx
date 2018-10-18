@@ -4,7 +4,7 @@
   <width>3840</width>
   <height>1080</height>
   <vsnap>8</vsnap>
-  <hsnap>16</hsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -74,7 +74,6 @@ audio_sound_gain(global.bgm, 2.0, 0);
     <instance objName="obj_track" x="2864" y="176" name="inst_B0261FB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blue_mini" x="1976" y="56" name="inst_460202C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_red_mini" x="1976" y="128" name="inst_7BB7C0DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_flag" x="3008" y="32" name="inst_0119CEDD" locked="0" code="" scaleX="1.25" scaleY="3.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_flag" x="2816" y="32" name="inst_9FDDB0E1" locked="0" code="" scaleX="1.25" scaleY="3.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_flag" x="2616" y="32" name="inst_57005BC5" locked="0" code="" scaleX="1.25" scaleY="3.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_flag" x="2400" y="32" name="inst_B65E7154" locked="0" code="" scaleX="1.25" scaleY="3.75" colour="4294967295" rotation="0"/>
@@ -84,6 +83,7 @@ audio_sound_gain(global.bgm, 2.0, 0);
     <instance objName="obj_track" x="1920" y="176" name="inst_F94672F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="lines" x="2195" y="689" name="inst_481187E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="lines" x="3139" y="688" name="inst_DE9221E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checker_flag" x="3016" y="32" name="inst_9614A675" locked="0" code="" scaleX="1" scaleY="3.86999988555908" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

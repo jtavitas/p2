@@ -59,15 +59,15 @@ switch(diff)
     break;
     
     case 1:
-    a = "Easy";   
+    a = "Add";   
     break;
     
     case 2:
-    a = "Medium";   
+    a = "Subtract";   
     break;
     
     case 3:
-    a = "Hard";   
+    a = "Multiply";   
     break;
 }
 

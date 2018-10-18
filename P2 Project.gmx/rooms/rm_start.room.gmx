@@ -54,7 +54,7 @@
     <instance objName="diff_store" x="96" y="32" name="inst_409FCDAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="diff_ctrl" x="32" y="32" name="inst_65A8AD81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGameControl" x="64" y="32" name="inst_0D08C555" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="diff_opt_p1" x="480" y="608" name="inst_5E754CF7" locked="0" code="diff = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="diff_opt_p1" x="480" y="608" name="inst_5E754CF7" locked="0" code="diff = 1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="diff_opt_p1" x="480" y="768" name="inst_971A37E0" locked="0" code="diff = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="diff_opt_p1" x="480" y="928" name="inst_7628F8F6" locked="0" code="diff = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="diff_opt_p2" x="1472" y="608" name="inst_358D76FF" locked="0" code="diff = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
