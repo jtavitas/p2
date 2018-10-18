@@ -50,8 +50,12 @@
     <sprite>sprites\mini_blue</sprite>
     <sprite>sprites\mini_red</sprite>
     <sprite>sprites\start_light</sprite>
-    <sprite>sprites\car_blue_placeholder</sprite>
-    <sprite>sprites\car_red_placeholder</sprite>
+    <sprite>sprites\car_blue</sprite>
+    <sprite>sprites\car_blue_brake</sprite>
+    <sprite>sprites\car_red</sprite>
+    <sprite>sprites\car_red_brake</sprite>
+    <sprite>sprites\board</sprite>
+    <sprite>sprites\lines_anim</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -146,6 +150,8 @@
       <object>objects\obj_blank_ans</object>
       <object>objects\blue_car</object>
       <object>objects\red_car</object>
+      <object>objects\lines</object>
+      <object>objects\obj_board</object>
     </objects>
     <objects name="Difficulty Selection">
       <object>objects\diff_ctrl</object>

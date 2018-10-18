@@ -16,6 +16,7 @@ else if (!correct)
         global.p1_can_brake = false;
         var snd = audio_play_sound(car_brake,5,0);
         audio_sound_gain(snd, 0.4, 0);
+        blue_car.brake = true;
     }
     obj_blue_mini.hspeed -= global.base_spd;
 }

@@ -3,8 +3,8 @@
   <caption></caption>
   <width>3840</width>
   <height>1080</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -59,20 +59,19 @@ audio_sound_gain(global.bgm, 2.0, 0);
     <instance objName="question_ctrl_p1" x="96" y="32" name="inst_9EC4DA62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="font_ctrl" x="64" y="32" name="inst_1AA64CB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGameControl" x="32" y="32" name="inst_9C85DE58" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ques_p1" x="2336" y="352" name="inst_080157FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ques_p1" x="2448" y="376" name="inst_080157FC" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_ans1_p1" x="480" y="768" name="inst_3FAF2139" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ans2_p1" x="272" y="880" name="inst_5F98448C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ans3_p1" x="688" y="880" name="inst_796BB644" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ans4_p1" x="480" y="992" name="inst_6B16ED73" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ques_p2" x="3296" y="352" name="inst_41555C05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ques_p2" x="3392" y="376" name="inst_41555C05" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_ans1_p2" x="1424" y="768" name="inst_2436E882" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ans2_p2" x="1216" y="880" name="inst_79DCC342" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ans3_p2" x="1632" y="880" name="inst_E900A14E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ans4_p2" x="1424" y="992" name="inst_FE78A71F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="question_ctrl_p2" x="128" y="32" name="inst_2BCB98BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mini_display" x="1920" y="0" name="inst_C8316C08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_track" x="1920" y="177" name="inst_42F3E249" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_track" x="2864" y="177" name="inst_B0261FB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_track" x="2864" y="176" name="inst_B0261FB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_blue_mini" x="1976" y="56" name="inst_460202C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_red_mini" x="1976" y="128" name="inst_7BB7C0DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_flag" x="3008" y="32" name="inst_0119CEDD" locked="0" code="" scaleX="1.25" scaleY="3.75" colour="4294967295" rotation="0"/>
@@ -80,8 +79,11 @@ audio_sound_gain(global.bgm, 2.0, 0);
     <instance objName="obj_flag" x="2616" y="32" name="inst_57005BC5" locked="0" code="" scaleX="1.25" scaleY="3.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_flag" x="2400" y="32" name="inst_B65E7154" locked="0" code="" scaleX="1.25" scaleY="3.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_flag" x="2176" y="32" name="inst_8795796E" locked="0" code="" scaleX="1.25" scaleY="3.75" colour="4294967295" rotation="0"/>
-    <instance objName="blue_car" x="2304" y="512" name="inst_A674731B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="red_car" x="3264" y="512" name="inst_B35AC98C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="blue_car" x="2336" y="544" name="inst_A674731B" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="red_car" x="3280" y="544" name="inst_B35AC98C" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_track" x="1920" y="176" name="inst_F94672F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="lines" x="2195" y="689" name="inst_481187E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="lines" x="3139" y="688" name="inst_DE9221E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -3,8 +3,8 @@
   <caption></caption>
   <width>3840</width>
   <height>1080</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -74,8 +74,10 @@
     <instance objName="count_signal" x="3200" y="384" name="inst_B7A27259" locked="0" code="a = &quot;2&quot;;&#xA;a_color = c_yellow;&#xA;b_color = c_orange;&#xA;order = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="count_signal" x="3392" y="384" name="inst_0FFB7FF5" locked="0" code="a = &quot;1&quot;;&#xA;a_color = c_red;&#xA;b_color = c_yellow;&#xA;order = 3;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="count_signal" x="3584" y="384" name="inst_A9B3795B" locked="0" code="a = &quot;GO!&quot;;&#xA;a_color = c_green;&#xA;b_color = c_lime;&#xA;order = 4;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="blue_car" x="2304" y="512" name="inst_7F791EF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="red_car" x="3264" y="512" name="inst_DA76DC3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="blue_car" x="2336" y="544" name="inst_7F791EF7" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="red_car" x="3280" y="544" name="inst_DA76DC3A" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_board" x="2448" y="376" name="inst_456F346F" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_board" x="3392" y="376" name="inst_D1E12B28" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
