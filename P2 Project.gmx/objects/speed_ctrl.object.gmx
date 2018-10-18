@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.base_spd = 0.4;
+            <string>global.base_spd = 0.2;
 </string>
           </argument>
         </arguments>
