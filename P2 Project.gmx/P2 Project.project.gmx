@@ -57,7 +57,10 @@
     <sprite>sprites\board</sprite>
     <sprite>sprites\lines_anim</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\p1_win_scrn</background>
+    <background>background\p2_win_scrn</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_qlist_easy_p1.gml</script>

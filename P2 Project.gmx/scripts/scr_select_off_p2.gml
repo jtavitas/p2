@@ -18,7 +18,7 @@ else if (!correct)
         audio_sound_gain(snd, 0.4, 0);
         red_car.brake = true;
     }
-    obj_red_mini.hspeed -= global.base_spd;
+    obj_red_mini.hspeed -= global.base_spd/10;
 }
 
 obj_red_mini.alarm[0] = 0;

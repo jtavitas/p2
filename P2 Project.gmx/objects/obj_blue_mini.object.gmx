@@ -77,6 +77,7 @@ global.p1_can_brake = true;
           <argument>
             <kind>1</kind>
             <string>if (hspeed &lt; global.base_spd) hspeed = global.base_spd;
+if (hspeed &gt; global.base_spd*4) hspeed = global.base_spd*4;
 </string>
           </argument>
         </arguments>
