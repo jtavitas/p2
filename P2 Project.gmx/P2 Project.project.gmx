@@ -64,8 +64,6 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_qlist_easy_p1.gml</script>
-    <script>scripts\scr_qlist_easy_p2.gml</script>
     <script>scripts\scr_qlist_p1_sub.gml</script>
     <script>scripts\scr_qlist_p2_sub.gml</script>
     <script>scripts\scr_qlist_p1_add.gml</script>
