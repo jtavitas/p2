@@ -32,6 +32,7 @@ alarm[0] = room_speed * timer;
 correct = false;
 global.p2_can_brake = true;
 boost = false;
+catch_up = false;
 </string>
           </argument>
         </arguments>
@@ -54,7 +55,10 @@ boost = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hspeed = global.base_spd;
+            <string>var s = global.base_spd;
+
+if (!catch_up) hspeed = s;
+else hspeed = s * 8;
 </string>
           </argument>
         </arguments>
@@ -102,14 +106,21 @@ scr_ans_reset_p2();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (hspeed &lt; global.base_spd) hspeed = global.base_spd;
-//if (hspeed &gt; global.base_spd*4) hspeed = global.base_spd*4;
+            <string>var s = global.base_spd;
+var xx = (obj_blue_mini.x - x);
+
+if (hspeed &lt; s) hspeed = s;
+
 if (boost)
 {
     boost = false;
-    hspeed = global.base_spd * 4;
-    alarm[1] = room_speed * 3;
+    hspeed = s * global.boost_amt;
+    alarm[1] = global.boost_time;
 }
+
+if (xx &gt;&gt; 75) catch_up = true;
+
+if (xx &lt;= 75) catch_up = false;
 </string>
           </argument>
         </arguments>

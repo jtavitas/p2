@@ -23,4 +23,4 @@ else if (!correct)
     //obj_blue_mini.hspeed -= global.base_spd/10;
 }
 
-obj_blue_mini.alarm[0] = room_speed * 3;
+obj_blue_mini.alarm[0] = global.q_time;

@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>global.base_spd = 0.2;
+global.boost_amt = 12;
+global.boost_time = room_speed * 1;
+global.q_time = room_speed * 1;
 </string>
           </argument>
         </arguments>
