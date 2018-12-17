@@ -175,6 +175,10 @@
       <object>objects\count_ctrl</object>
       <object>objects\count_signal</object>
     </objects>
+    <objects name="Best Times">
+      <object>objects\timer_readout</object>
+      <object>objects\timer_final</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_start</room>

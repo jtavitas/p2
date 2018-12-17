@@ -80,6 +80,8 @@ audio_sound_gain(global.bgm, 2.0, 0);
     <instance objName="lines" x="2195" y="689" name="inst_481187E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="lines" x="3139" y="688" name="inst_DE9221E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_checker_flag" x="3016" y="32" name="inst_9614A675" locked="0" code="" scaleX="1" scaleY="3.86999988555908" colour="4294967295" rotation="0"/>
+    <instance objName="timer_final" x="32" y="72" name="inst_8626BFE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="timer_readout" x="896" y="744" name="inst_36117CDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
