@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="1" name="datafiles">
+  <datafiles number="2" name="datafiles">
     <datafile>
       <name>CoveredByYourGrace.ttf</name>
       <exists>-1</exists>
@@ -108,6 +108,8 @@
         <script>scripts\move_link.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\scr_draw_initials_entry.gml</script>
+    <script>scripts\scr_draw_highscores.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Arial</font>
