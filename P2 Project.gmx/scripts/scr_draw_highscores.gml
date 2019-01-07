@@ -29,7 +29,7 @@ i = 1;
 repeat(10)
 {
     displayText = string_insert("           ", highscore_name(i), string_length(highscore_name(i))+1);
-    displayText = string_insert(highscore_value(i), displayText, string_length(displayText)+1);
+    displayText = string_insert((highscore_value(i) / 100), displayText, string_length(displayText)+1);
     displayText = string_insert(" seconds", displayText, string_length(displayText)+1);
     yy -= iy;
     
