@@ -92,7 +92,7 @@ if (textEntry)
     if (cursorPos &gt;= 4)
     {
         textEntry = false;
-        highscore_add(string_upper(inputText), global.timer_record);
+        highscore_add(string_upper(inputText), global.timer_record * 100);
         alarm[0] = room_speed * 30;
     }
 }

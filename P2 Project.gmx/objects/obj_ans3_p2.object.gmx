@@ -78,7 +78,7 @@ correct = global.cur_q_p2[5] == 3;
             <kind>1</kind>
             <string>///Check Gamepad Input
 check = false;
-if (input_check(global.gp_B, 1) || keyboard_check(vk_right)) check = true;
+if (input_check_released(global.gp_B, 1) || keyboard_check_released(vk_right)) check = true;
 
 if (check &amp;&amp; can_select)
 {
