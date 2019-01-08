@@ -39,6 +39,10 @@ switch(a)
     case 3:
     scr_qlist_p2_mult();
     break;
+    
+    case 4:
+    scr_qlist_autogen(2);
+    break;
 }
 
 ds_list_shuffle(global.questions_p2);

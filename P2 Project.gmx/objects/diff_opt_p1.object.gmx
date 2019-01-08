@@ -69,6 +69,10 @@ switch(diff)
     case 3:
     a = "Multiply";   
     break;
+    
+    case 4:
+    a = " ??? ";   
+    break;
 }
 
 if (diff == global.p1_diff)

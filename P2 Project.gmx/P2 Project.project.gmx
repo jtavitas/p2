@@ -110,6 +110,8 @@
     </scripts>
     <script>scripts\scr_draw_initials_entry.gml</script>
     <script>scripts\scr_draw_highscores.gml</script>
+    <script>scripts\scr_qlist_ans.gml</script>
+    <script>scripts\scr_qlist_autogen.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Arial</font>

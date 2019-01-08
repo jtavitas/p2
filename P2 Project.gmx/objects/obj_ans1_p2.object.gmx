@@ -54,7 +54,7 @@ b_color = c_orange;
             <kind>1</kind>
             <string>///Set Current Question
 a = global.cur_q_p2[1];
-correct = global.cur_q_p2[5] == 1;
+correct = global.cur_q_p2[5] == global.cur_q_p2[1];
 </string>
           </argument>
         </arguments>
