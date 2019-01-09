@@ -29,19 +29,15 @@
 switch(a)
 {
     case 1:
-    scr_qlist_p1_add();
+    scr_qlist_add(1);
     break;
     
     case 2:
-    scr_qlist_p1_sub();
+    scr_qlist_sub(1);
     break;
     
     case 3:
-    scr_qlist_p1_mult();
-    break;
-    
-    case 4:
-    scr_qlist_autogen(1);
+    scr_qlist_mult(1);
     break;
 }
 
