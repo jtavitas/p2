@@ -65,12 +65,7 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_qlist_p1_sub.gml</script>
-    <script>scripts\scr_qlist_p2_sub.gml</script>
-    <script>scripts\scr_qlist_p1_add.gml</script>
-    <script>scripts\scr_qlist_p2_add.gml</script>
-    <script>scripts\scr_qlist_p1_mult.gml</script>
-    <script>scripts\scr_qlist_p2_mult.gml</script>
+    <script>scripts\obsolete_scr_qlist_p1_add.gml</script>
     <script>scripts\scr_ans_select.gml</script>
     <script>scripts\scr_ans_reset_p1.gml</script>
     <script>scripts\scr_ans_reset_p2.gml</script>
@@ -113,6 +108,7 @@
     <script>scripts\scr_qlist_ans.gml</script>
     <script>scripts\scr_qlist_add.gml</script>
     <script>scripts\scr_qlist_mult.gml</script>
+    <script>scripts\scr_qlist_mix.gml</script>
     <script>scripts\scr_qlist_sub.gml</script>
   </scripts>
   <fonts name="fonts">

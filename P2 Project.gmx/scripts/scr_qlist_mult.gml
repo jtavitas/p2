@@ -1,13 +1,10 @@
-if (argument0 == 1) global.questions_p1 = ds_list_create();
-if (argument0 == 2) global.questions_p2 = ds_list_create();
-
 var choices = ds_list_create();
 var e;
 var a;
 var b;
 var c;
 var i;
-var q = 35;
+var q = argument1;
 var displayText = "";
 
 for (i = 1; i <= q; i++)

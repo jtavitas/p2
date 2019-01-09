@@ -26,18 +26,24 @@
           <argument>
             <kind>1</kind>
             <string>var a = diff_store.p1_diff;
+global.questions_p1 = ds_list_create();
+
 switch(a)
 {
     case 1:
-    scr_qlist_add(1);
+    scr_qlist_add(1, 30);
     break;
     
     case 2:
-    scr_qlist_sub(1);
+    scr_qlist_sub(1, 30);
     break;
     
     case 3:
-    scr_qlist_mult(1);
+    scr_qlist_mult(1, 30);
+    break;
+    
+    case 4:
+    scr_qlist_mix(1, 30);
     break;
 }
 

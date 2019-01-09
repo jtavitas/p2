@@ -28,7 +28,7 @@
             <string>confirmed = 0;
 global.p1_diff = 1;
 global.p2_diff = 1;
-num_lvls = 3;
+num_lvls = 4;
 scroll_p1 = true;
 scroll_p2 = true;
 sel_p1 = true;

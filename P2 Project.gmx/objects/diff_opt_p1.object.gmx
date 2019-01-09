@@ -71,7 +71,7 @@ switch(diff)
     break;
     
     case 4:
-    a = " ??? ";   
+    a = "Mix";   
     break;
 }
 
@@ -79,16 +79,16 @@ if (diff == global.p1_diff)
 {
     if (!global.selected_p1)
     {
-        draw_sprite_ext(sprite_index, -1, x, y, 1, 1, 0, c_aqua, 1.0);
+        draw_sprite_ext(sprite_index, -1, x, y, image_xscale, 1, 0, c_aqua, 1.0);
     }
     else
     {
-        draw_sprite_ext(sprite_index, -1, x, y, 1, 1, 0, c_green, 1.0);
+        draw_sprite_ext(sprite_index, -1, x, y, image_xscale, 1, 0, c_green, 1.0);
     }
 }
 else
 {
-    draw_sprite_ext(sprite_index, -1, x, y, 1, 1, 0, c_white, 1.0);
+    draw_sprite_ext(sprite_index, -1, x, y, image_xscale, 1, 0, c_white, 1.0);
 }
 
 draw_text_colour(x, y, a, c_black, c_black, c_black, c_black, 1.0);

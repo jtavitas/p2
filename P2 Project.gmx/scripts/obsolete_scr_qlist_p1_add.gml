@@ -1,4 +1,3 @@
-global.questions_p1 = ds_list_create();
 var a;
 
 a[0] = "55 + 80 = ?";
