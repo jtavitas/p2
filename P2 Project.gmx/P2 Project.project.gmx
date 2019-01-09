@@ -166,8 +166,11 @@
       <object>objects\obj_board</object>
     </objects>
     <objects name="Difficulty Selection">
+      <object>objects\mode_ctrl</object>
       <object>objects\diff_ctrl</object>
+      <object>objects\mode_opt_p1</object>
       <object>objects\diff_opt_p1</object>
+      <object>objects\mode_opt_p2</object>
       <object>objects\diff_opt_p2</object>
       <object>objects\diff_store</object>
       <object>objects\logo</object>
@@ -183,7 +186,8 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_start</room>
+    <room>rooms\rm_start_mode_sel</room>
+    <room>rooms\rm_start_diff_sel</room>
     <room>rooms\rm_cntdwn</room>
     <room>rooms\rm_main</room>
     <room>rooms\rm_win_p1</room>

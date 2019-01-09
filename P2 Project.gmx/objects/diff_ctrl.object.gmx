@@ -28,7 +28,7 @@
             <string>confirmed = 0;
 global.p1_diff = 1;
 global.p2_diff = 1;
-num_lvls = 4;
+num_lvls = 3;
 scroll_p1 = true;
 scroll_p2 = true;
 sel_p1 = true;
@@ -233,6 +233,22 @@ if (input_check_released(global.gp_A, 1) || keyboard_check_released(vk_rcontrol)
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="46">
+      <action>
+        <libid>1</libid>
+        <id>707</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_highscore_clear</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>

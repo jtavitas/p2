@@ -1,3 +1,4 @@
+///Provides random incorrect answers based from the correct answer
 var r;
 var e = argument0;
 var ans = irandom(3);
@@ -22,6 +23,3 @@ switch(ans)
 }
 
 return r;
-r = 0;
-e = 0;
-ans = 0;

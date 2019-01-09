@@ -25,25 +25,26 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var a = diff_store.p2_diff;
+            <string>var a = diff_store.p2_mode;
+var b = diff_store.p2_diff;
 global.questions_p2 = ds_list_create();
 
 switch(a)
 {
     case 1:
-    scr_qlist_add(2, 30);
+    scr_qlist_add(2, 30, b); //Addition, Player, # Questions, Difficulty
     break;
     
     case 2:
-    scr_qlist_sub(2, 30);
+    scr_qlist_sub(2, 30, b);
     break;
     
     case 3:
-    scr_qlist_mult(2, 30);
+    scr_qlist_mult(2, 30, b);
     break;
     
     case 4:
-    scr_qlist_mix(2, 30);
+    scr_qlist_mix(2, 30, b);
     break;
 }
 

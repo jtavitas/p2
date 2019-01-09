@@ -5,12 +5,28 @@ var b;
 var c;
 var i;
 var q = argument1;
+var h = argument2;
 var displayText = "";
 
 for (i = 1; i <= q; i++)
 {
-    a = irandom(10);
-    b = irandom(10);
+    switch(h)
+    {
+        case 1:
+        a = irandom(10);
+        b = irandom(10);
+        break;
+        
+        case 2:
+        a = irandom(50);
+        b = irandom(50);
+        break;
+        
+        case 3:
+        a = irandom(100);
+        b = irandom(100);
+        break;
+    }
     c = a + b;
     
     displayText = a;

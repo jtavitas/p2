@@ -5,18 +5,48 @@ var b;
 var c;
 var i;
 var q = argument1;
+var h = argument2;
 var displayText = "";
 
 for (i = 1; i <= q; i++)
 {
-    a = irandom(10);
-    b = irandom(10);
-    if ((a - b) >= 0) c = a - b;
-    else
+    switch(h)
     {
-        a = irandom_range(5, 10);
-        b = irandom(5);
-        c = a - b;
+        case 1:
+        a = irandom(10);
+        b = irandom(10);
+        if ((a - b) >= 0) c = a - b;
+        else
+        {
+            a = irandom_range(5, 10);
+            b = irandom(5);
+            c = a - b;
+        }
+        break;
+        
+        case 2:
+        a = irandom(50);
+        b = irandom(50);
+        if ((a - b) >= 0) c = a - b;
+        else
+        {
+            a = irandom_range(25, 50);
+            b = irandom(25);
+            c = a - b;
+        }
+        break;
+        
+        case 3:
+        a = irandom(100);
+        b = irandom(100);
+        if ((a - b) >= 0) c = a - b;
+        else
+        {
+            a = irandom_range(50, 100);
+            b = irandom(50);
+            c = a - b;
+        }
+        break;
     }
     
     displayText = a;
