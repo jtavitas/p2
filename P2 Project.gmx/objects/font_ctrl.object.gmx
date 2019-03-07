@@ -26,14 +26,18 @@
           <argument>
             <kind>1</kind>
             <string>/// Load some fonts
-if (os_type == os_windows || os_type == os_win32 || os_type == os_win8native)
-    var _slash = "\";
-else
-    var _slash = "/";
+if (os_browser == browser_not_a_browser)
+{
+    if (os_type == os_windows || os_type == os_win32 || os_type == os_win8native)
+        var _slash = "\";
+    else
+        var _slash = "/";
 var _resdir = working_directory + _slash;
 
 var _path = _resdir  + "CoveredByYourGrace.ttf";
 global.font_draw = font_add(_path, 64, false, false, 32, 128);
+}
+else global.font_draw = font1;
 
 draw_set_font(global.font_draw);
 </string>

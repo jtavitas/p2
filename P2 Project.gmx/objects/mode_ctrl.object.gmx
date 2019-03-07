@@ -210,7 +210,7 @@ if (scroll_p2)
     }
 }
 
-if (input_check_released(global.gp_A, 0) || keyboard_check_released(vk_lcontrol))
+if (input_check_released(global.gp_A, 0) || keyboard_check_released(vk_lcontrol) || keyboard_check_released(vk_lshift))
 {
     if (sel_p1)
     {
@@ -220,7 +220,7 @@ if (input_check_released(global.gp_A, 0) || keyboard_check_released(vk_lcontrol)
         sel_p1 = false; alarm[2] = 5;
     }
 }
-if (input_check_released(global.gp_A, 1) || keyboard_check_released(vk_rcontrol))
+if (input_check_released(global.gp_A, 1) || keyboard_check_released(vk_rcontrol) || keyboard_check_released(vk_rshift))
 {   
     if(sel_p2)
     {

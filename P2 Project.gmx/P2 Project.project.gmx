@@ -113,6 +113,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\Arial</font>
+    <font>fonts\font1</font>
   </fonts>
   <objects name="objects">
     <objects name="System Controllers">
