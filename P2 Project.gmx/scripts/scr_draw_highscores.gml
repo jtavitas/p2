@@ -51,3 +51,13 @@ repeat(10)
     
     i -= 1;
 }
+
+displayText = "Press ENTER to race again!";
+c = c_black;
+yy = room_height - 45;
+draw_text_transformed_colour(xx - offset, yy, displayText, tS, tS, 0, c,c,c,c,1.0);
+draw_text_transformed_colour(xx + offset, yy, displayText, tS, tS, 0, c,c,c,c,1.0);
+draw_text_transformed_colour(xx, yy - offset, displayText, tS, tS, 0, c,c,c,c,1.0);
+draw_text_transformed_colour(xx, yy + offset, displayText, tS, tS, 0, c,c,c,c,1.0);
+c = c_aqua;
+draw_text_transformed_colour(xx, yy, displayText, tS, tS, 0, c,c,c,c,1.0);
