@@ -39,6 +39,11 @@ global.font_draw = font_add(_path, 64, false, false, 32, 128);
 }
 else global.font_draw = font1;
 
+global.score_table = _resdir + "highscore.ini";
+ini_open(global.score_table);
+var a = ini_read_string('0', 'name', 'NO1');
+ini_write_string('0', 'name', a);
+ini_close();
 draw_set_font(global.font_draw);
 </string>
           </argument>

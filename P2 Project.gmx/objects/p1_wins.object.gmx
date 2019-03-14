@@ -92,7 +92,59 @@ if (textEntry)
     if (cursorPos &gt;= 4)
     {
         textEntry = false;
-        highscore_add(string_upper(inputText), (global.timer_record * 100));
+        //Highscore Update
+        var table = ds_grid_create(2, 10);
+        var a;
+        var b;
+
+        ini_open(global.score_table);
+        
+        a[9] = ini_read_real('9', 'time', '0.00');
+        b[9] = ini_read_string('9', 'name', 'NO10');
+        
+        //show_message(a[9]);
+        if (a[9] == 0)
+        {
+            a[9] = global.timer_record;
+            //show_message("Overwrite default value");
+        }
+
+        if (global.timer_record &lt;= a[9])
+        {
+            //show_message("Update HS Table");
+            a[9] = global.timer_record;
+            b[9] = string_upper(inputText);
+    
+            var i = 0;
+            repeat(9)
+            {
+                a[i] = ini_read_real(i, 'time', '0.00');
+                b[i] = ini_read_string(i, 'name', 'NO1');
+                i += 1;
+            }
+            i = 0;
+    
+            repeat(10)
+            {
+                ds_grid_add(table, 0, i, a[i]);
+                ds_grid_add(table, 1, i, b[i]);
+                i += 1;
+            }
+            i = 0; a = ""; b = "";
+    
+            ds_grid_sort(table, 0, true);
+    
+            repeat(10)
+            {
+                ini_write_string(i, 'name', ds_grid_get(table, 1, i));
+                ini_write_real(i, 'time', ds_grid_get(table, 0, i));
+                i += 1;
+            }
+            i = ""; ds_grid_destroy(table);
+        }
+        
+        ini_close();
+        
         alarm[0] = room_speed * 30;
     }
 }

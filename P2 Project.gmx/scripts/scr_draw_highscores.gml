@@ -25,11 +25,16 @@ draw_text_transformed_colour(xx, yy, displayText, tS, tS, 0, c,c,c,c,1.0);
 
 var i;
 var iy = 60;
-i = 1;
+i = 9;
+
 repeat(10)
 {
-    displayText = string_insert("           ", highscore_name(i), string_length(highscore_name(i))+1);
-    displayText = string_insert((highscore_value(i) / 100), displayText, string_length(displayText)+1);
+    ini_open(global.score_table);
+    var a = ini_read_real(i, 'time', '0.00');
+    var b = ini_read_string(i, 'name', 'NO1');
+    ini_close();
+    displayText = string_insert("           ", b, string_length(b)+1);
+    displayText = string_insert(a, displayText, string_length(displayText)+1);
     displayText = string_insert(" seconds", displayText, string_length(displayText)+1);
     yy -= iy;
     
@@ -44,5 +49,5 @@ repeat(10)
     c = c_orange;
     draw_text_transformed_colour(xx, yy, displayText, tS, tS, 0, c,c,c,c,1.0);
     
-    i += 1;
+    i -= 1;
 }

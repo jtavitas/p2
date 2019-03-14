@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="2" name="datafiles">
+  <datafiles number="3" name="datafiles">
     <datafile>
       <name>CoveredByYourGrace.ttf</name>
       <exists>-1</exists>
@@ -20,6 +20,23 @@
         </Config>
       </ConfigOptions>
       <filename>CoveredByYourGrace.ttf</filename>
+    </datafile>
+    <datafile>
+      <name>highscore.ini</name>
+      <exists>-1</exists>
+      <size>250</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>105553895358702</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>highscore.ini</filename>
     </datafile>
   </datafiles>
   <NewExtensions>
@@ -110,6 +127,7 @@
     <script>scripts\scr_qlist_mult.gml</script>
     <script>scripts\scr_qlist_mix.gml</script>
     <script>scripts\scr_qlist_sub.gml</script>
+    <script>scripts\scr_write_highscore.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\Arial</font>
