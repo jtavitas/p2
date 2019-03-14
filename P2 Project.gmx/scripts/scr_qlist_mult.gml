@@ -38,12 +38,9 @@ for (i = 1; i <= q; i++)
     
     //Method of shuffling answers goes here
     ds_list_add(choices, c);
-    ds_list_add(choices, scr_qlist_ans(c, "", ""));
-    var xxx = ds_list_find_value(choices, 1);
-    ds_list_add(choices, scr_qlist_ans(c, xxx, ""));
-    var yyy = ds_list_find_value(choices, 2);
-    ds_list_add(choices, scr_qlist_ans(c, xxx, yyy));
-    xxx = ""; yyy = "";
+    ds_list_add(choices, scr_qlist_ans(c));
+    ds_list_add(choices, scr_qlist_ans(c));
+    ds_list_add(choices, scr_qlist_ans(c));
     
     ds_list_shuffle(choices);
     e[1] = ds_list_find_value(choices, 0); //Choice 1
