@@ -75,6 +75,8 @@
     <sprite>sprites\lines_anim</sprite>
     <sprite>sprites\logo_lic</sprite>
     <sprite>sprites\guide</sprite>
+    <sprite>sprites\kb_guide_L</sprite>
+    <sprite>sprites\kb_guide_R</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\p1_win_scrn</background>
@@ -194,6 +196,8 @@
       <object>objects\diff_store</object>
       <object>objects\logo</object>
       <object>objects\obj_guide</object>
+      <object>objects\obj_kb_guideL</object>
+      <object>objects\obj_kb_guideR</object>
     </objects>
     <objects name="Countdown">
       <object>objects\count_ctrl</object>
