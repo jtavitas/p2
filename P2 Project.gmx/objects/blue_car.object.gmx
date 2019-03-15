@@ -27,6 +27,33 @@
             <kind>1</kind>
             <string>image_speed = 0;
 brake = false;
+
+smoking = false;
+boosting = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>smoking = false;
+boosting = false;
 </string>
           </argument>
         </arguments>
@@ -50,6 +77,7 @@ brake = false;
           <argument>
             <kind>1</kind>
             <string>sprite_index = car_blue;
+smoking = false;
 </string>
           </argument>
         </arguments>
@@ -75,9 +103,28 @@ brake = false;
             <string>if (brake)
 {
     brake = false;
+    smoking = true;
     sprite_index = car_blue_brake;
     image_index = 0;
     alarm[0] = room_speed * 1;
+}
+
+if (smoking)
+{
+    smoke_left = effect_create_above(ef_smokeup, x+(15*1.5), y+(106*1.5), 1, c_gray);
+    smoke_right = effect_create_above(ef_smokeup, x+(168*1.5), y+(106*1.5), 1, c_gray);
+}
+
+if (boosting)
+{
+    boost_left = effect_create_above(ef_smokeup, x+(48*1.5), y+(78*1.5), 0, c_blue);
+    boost_right = effect_create_above(ef_smokeup, x+(132*1.5), y+(78*1.5), 0, c_blue);
+}
+
+if (room = rm_cntdwn)
+{
+    idle_left = effect_create_above(ef_smokeup, x+(48*1.5), y+(78*1.5), 0, c_black);
+    idle_right = effect_create_above(ef_smokeup, x+(132*1.5), y+(78*1.5), 0, c_black);
 }
 </string>
           </argument>
@@ -101,7 +148,14 @@ brake = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room == rm_main) image_speed = 1.0;
+            <string>if (room == rm_main)
+{
+    image_speed = 1.0;
+    smoking = true;
+    alarm[1] = room_speed * 1;
+    boosting = true;
+}
+
 </string>
           </argument>
         </arguments>

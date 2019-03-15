@@ -56,6 +56,8 @@ catch_up = false;
           <argument>
             <kind>1</kind>
             <string>var s = global.base_spd;
+blue_car.image_speed = 1.0;
+blue_car.boosting = false;
 
 if (!catch_up) hspeed = s;
 else hspeed = s * 8;
@@ -115,6 +117,8 @@ if (boost)
 {
     boost = false;
     hspeed = s * global.boost_amt;
+    blue_car.image_speed = hspeed;
+    blue_car.boosting = true;
     alarm[1] = global.boost_time;
 }
 
