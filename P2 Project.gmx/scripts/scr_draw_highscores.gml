@@ -33,7 +33,10 @@ repeat(10)
     var a = ini_read_real(i, 'time', '0.00');
     var b = ini_read_string(i, 'name', 'NO1');
     ini_close();
-    displayText = string_insert("           ", b, string_length(b)+1);
+    ii = i+1;
+    displayText = string_insert(ii, ".  ", 0);
+    displayText = string_insert(b, displayText, string_length(displayText)+1);
+    displayText = string_insert("           ", displayText, string_length(displayText)+1);
     displayText = string_insert(a, displayText, string_length(displayText)+1);
     displayText = string_insert(" seconds", displayText, string_length(displayText)+1);
     yy -= iy;
