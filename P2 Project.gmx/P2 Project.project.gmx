@@ -137,6 +137,7 @@
   </fonts>
   <objects name="objects">
     <objects name="System Controllers">
+      <object>objects\obj_surface_views</object>
       <object>objects\font_ctrl</object>
       <object>objects\question_ctrl_p1</object>
       <object>objects\question_ctrl_p2</object>
